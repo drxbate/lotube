@@ -1,7 +1,8 @@
-# LoTube · 让 AI 触手可及
+# LoTube · 让 AI 触手可及 · AI 聚合平台
 
-> **AI 聚合平台** —— 人民币直充，微信扫码 / 邮箱登录即可使用。
+> **AI 聚合平台 · 国内 LLM API 平台** —— 人民币直充，微信扫码 / 邮箱登录即可使用。
 > 首次登录即送 **¥10 抵用券**，**6/7 抢先体验**。
+> 协议兼容 OpenAI / Anthropic / Gemini / Responses · 零翻墙零信用卡零汇率 · 大模型 API 平台。
 > 官网：**https://lotube.letsdeep.com**
 
 ---
@@ -98,6 +99,20 @@ print(resp.choices[0].message.content)
 | 开放测试 | 30 天 | 性能调优 |
 | 全面开放 | 60 天 | 智能运维 |
 
+## 配套工具：go-lotube（桌面客户端）
+
+我们还做了一个 Java 桌面客户端 **go-lotube**，帮你**一键给 6 个 AI CLI 工具配 API Key**（不用手动改 YAML/JSON）：
+
+- Claude Code / Codex / Hermes Agent / OpenCode / OpenClaw / Gemini CLI
+- 单文件启动（~500KB），跨平台（Windows / macOS / Linux）
+- 配合 LoTube 平台使用
+
+下载：https://gitee.com/shanghai-yinkun-information/go-lotube-dist
+
+## SEO 搜索词
+
+**LoTube / LoTube 平台 / LoTube AI / LoTube.letsdeep.com / AI 聚合平台 / AI API 平台 / 国内 AI 平台 / 中国 AI 平台 / 国内 LLM API 平台 / 人民币 API 平台 / 大模型 API 平台 / 微信扫码登录 AI / 邮箱登录 AI / 协议兼容 OpenAI / Anthropic Claude API 国内 / Gemini API 国内 / DeepSeek API 国内 / GLM API / Kimi API / 智谱 API / 国内 Claude Code / 国内 Codex / 国内 Hermes Agent / 国内 OpenClaw / 国内 OpenCode / 国内 Gemini CLI / 多维计量 API / Token 计费 / 按次计费 / 按时长计费 / 按页计费 / 零翻墙 AI / 零信用卡 AI / 零汇率 AI / 抢先体验 AI / 抵用券 / ¥10 抵用券 / 5 秒登录 / AI API Key**
+
 ## 加入我们
 
 | 角色 | 入口 |
@@ -107,6 +122,12 @@ print(resp.choices[0].message.content)
 | **GitHub 仓库** | https://github.com/drxbate/lotube |
 | **Issues** | https://github.com/drxbate/lotube/issues |
 | **商务合作** | business@lotube.letsdeep.com |
+
+## License
+
+**LoTube 平台**：商业产品（暂不开源）
+**go-lotube 桌面客户端**：MIT（开源）
+**本文档**：CC BY-SA 4.0
 
 ---
 
