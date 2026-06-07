@@ -1,81 +1,70 @@
-# LoTube · 让 LLM 像水电一样按用量付费
+# LoTube · 让 AI 触手可及
 
-> **AI 基础设施消费平台** — 人民币充值，按 Token / 次数 / 时长 / 页数计费，调用 GPT / Claude / DeepSeek / GLM 等主流大模型。
+> **AI 聚合平台** —— 人民币直充，微信扫码 / 邮箱登录即可使用。
+> 首次登录即送 **¥10 抵用券**，**6/7 抢先体验**。
 > 官网：**https://lotube.letsdeep.com**
 
 ---
 
-## 为什么做 LoTube？
+## 我们做这件事的初衷
 
-全球 LLM API 市场年增速 60%+，但**中国开发者用 AI 仍然很难**：
+希望让更多人能享受到这一波 AI 的红利，而不是被各种坑劝退。
 
-- 海外平台**充值链路复杂**（信用卡 + 翻墙 + 汇率不透明）
-- **汇率波动**让成本不可控
-- 不知道**实际花了多少**（很多平台按 token 计费但 token 含义不透明）
-- 个人开发者 / 中小企业**没有议价权**
+我们看到很多开发者朋友想用 AI，却被充值链路、汇率、token 黑盒、计费不透明、模型莫名降智这些问题拦住。
 
-**LoTube 的解法：人民币直充 + 多维计量 + 明码标价。**
+**LoTube 想把这些事情变简单。**
 
 ```
 你（人民币充值 → 账户余额）
    ↓
-LoTube（AI 消费平台，多维计量，自主定价）
-   ↓ 实际用量 × 单价结算
-底层算力层（Frey 兜底，按 RMB 结算）
-   ↓
+LoTube（AI 聚合平台）
+   ↓ 按实际用量结算
 GPT / Claude / DeepSeek / GLM / Kimi / 智谱 等模型
 ```
 
-## 核心特性
+## 我们想做到的几件事
 
 ### 1. 人民币直充
 
 - 支付宝 / 微信 / 银行卡
-- 1 元起充，**无汇率风险**
+- 1 元起充
 - 实时到账，余额永不过期
 
-### 2. 多维计量（不是只按 Token！）
+### 2. 用多少算多少（不藏）
 
-| 类型 | 场景 | 示例定价 |
-|------|------|---------|
-| **Token** | 文本生成 | DeepSeek ¥0.001/1K tokens |
-| **按次** | API 调用 | ¥0.01/次 |
-| **按时长** | 音频 / 视频 | ¥0.10/秒 |
-| **按页** | PPT / 图片生成 | ¥0.50/页 |
+我们不希望用户在月底才看账单。每次调用前能看到预估费用，调用后能看到实际扣费。**每一分钱花在哪都看得见。**
 
-不同模型单价不同，**全平台明码标价**。
+### 3. 直连算力集群
 
-### 3. 自主定价
+不走三方转售，**每一分钱进模型**。
 
-LoTube 自有定价权，**差价 = 用户支付价 - 底层采购价**（固定，公开）。
-不靠 token 隐藏利润，**每一分钱花在哪都看得见**。
+### 4. 锁定模型
 
-### 4. 全人群覆盖
+今天是 GPT-4o，明天还是 GPT-4o。**不会莫名其妙降智**。
 
-| 用户类型 | 适合套餐 |
-|---------|---------|
-| 个人开发者 | 充值即用，按量计费 |
-| 创业团队 | 月度账单，成本可控 |
-| 中小企业 | 团队子账号，权限分级 |
-| AI 重度用户 | 多模型切换，性价比最优 |
+### 5. 多维计量（不只 token）
 
-## 第 1 期 · 开放公测（6/8 上线）
+| 计量 | 场景 | 示例 |
+|------|------|------|
+| Token | 文本生成 | DeepSeek ¥0.001/1K |
+| 按次 | API 调用 | ¥0.01/次 |
+| 按时长 | 音频 / 视频 | ¥0.10/秒 |
+| 按页 | PPT / 图片 | ¥0.50/页 |
 
-**免注册登录 + 自动赠券**：
+### 6. 协议兼容 —— 已有项目 0 迁移
+
+OpenAI / Anthropic / Gemini / Responses API 4 套协议，改一行 `base_url` 就能切过来。
+
+## 6/7 抢先体验
+
+**不用申请，不用审核，登录即用**：
 
 - 访问 [lotube.letsdeep.com](https://lotube.letsdeep.com)
-- **微信扫码** 或 **邮箱登录** 即可使用
-- 首次登录自动送 **¥10 体验券**（直接到账）
-- 登录后即拿到 **API key**，**不用申请、不用等审核**
+- **微信扫码** 或 **邮箱登录**
+- 首次登录自动送 **¥10 抵用券**（直接到账）
+- 同时下发 **API key**
 
-### 快速开始
-
-1. 打开 [lotube.letsdeep.com](https://lotube.letsdeep.com)
-2. 点"立即免费试用" / "登录"
-3. 选 **微信扫码** 或 **邮箱登录**（邮箱首次登录会自动注册）
-4. 进控制台，¥10 体验券已到账 + API key 已生成
-
-**整个流程 30 秒搞定**。
+整个流程 **5 秒** 搞定。
 
 ## 快速开始（拿到 API key 后）
 
@@ -84,61 +73,47 @@ import openai
 
 client = openai.OpenAI(
     api_key="YOUR_LOTUBE_KEY",
-    base_url="https://api.lotube.letsdeep.com/v1",  # 兼容 OpenAI 协议
+    base_url="https://api.lotube.letsdeep.com/api",
 )
 
 resp = client.chat.completions.create(
     model="deepseek-chat",
     messages=[{"role": "user", "content": "用一句话介绍 LoTube"}],
-    max_tokens=200,
 )
 print(resp.choices[0].message.content)
-# 费用: 1.2K tokens × ¥0.001/1K = ¥0.0012
 ```
 
-**完全兼容 OpenAI / Anthropic 协议**——一行 `base_url` 改指向，**已有项目零迁移**。
+## 用户福利（抢先体验用户专享）
+
+- 首次登录即送 **¥10 抵用券**
+- 优先接入新模型（**24 小时内** LoTube 上线）
+- 1v1 技术支持（**7×12** 小时响应）
+- 抢先体验结束**保留账户 + 余额**
 
 ## 路线图
 
-| 阶段 | 周期 | 目标 | 状态 |
-|------|------|------|------|
-| 第 1 期 · 内测 | 30 天 | 100 注册 / 20 复购 | **6/8 开放** |
-| 第 2 期 · 开放测试 | 30 天 | 500 注册 / 100 复购 | Q3 2026 |
-| 第 3 期 · 全面开放 | 60 天 | 1000 注册 / 500 复购 | Q4 2026 |
-| 第 4 期 · 智能运维 | — | AGENT 运维 | 2027 |
-
-## 技术栈（开源计划）
-
-- **前端**：Vue 3 + TypeScript
-- **后端**：Go + Gin
-- **计费**：自研多维计量引擎（Token / 次数 / 时长 / 页数）
-- **协议兼容**：OpenAI / Anthropic / Gemini / Responses API
-- **算力层**：自建 + 合作（包含 Frey 等供应商）
-
-后续会**逐步开源**核心计费与计量模块，**先商用 → 再开源**。
+| 阶段 | 周期 | 目标 |
+|------|------|------|
+| 抢先体验 | 30 天 | 验证流程、稳定服务 |
+| 开放测试 | 30 天 | 性能调优 |
+| 全面开放 | 60 天 | 智能运维 |
 
 ## 加入我们
 
-| 角色 | 联系方式 |
-|------|---------|
-| **官网登录** | https://lotube.letsdeep.com （微信扫码 / 邮箱登录） |
+| 角色 | 入口 |
+|------|------|
+| **抢先体验** | https://lotube.letsdeep.com（微信扫码 / 邮箱登录）|
+| **API 文档** | https://lotube.letsdeep.com/docs |
+| **GitHub 仓库** | https://github.com/drxbate/lotube |
+| **Issues** | https://github.com/drxbate/lotube/issues |
 | **商务合作** | business@lotube.letsdeep.com |
-| **媒体咨询** | press@lotube.letsdeep.com |
-| **GitHub Issues** | [本仓库 issues](https://github.com/drxbate/lotube/issues) |
-| **微信群** | 登录后在控制台首页扫码加入 |
-
-## License
-
-平台本体暂不开源（商业产品）。
-**API SDK 客户端**：MIT（后续开源）。
-本文档：CC BY-SA 4.0。
 
 ---
 
 <div align="center">
 
-**让 AI 消费像扫码支付一样简单。**
+**希望更多人能享受这一波 AI 红利，而不是被各种坑劝退。** —— LoTube Team
 
-[官网登录](https://lotube.letsdeep.com) · [API 文档](https://lotube.letsdeep.com/docs) · [Issues](https://github.com/drxbate/lotube/issues)
+[官网](https://lotube.letsdeep.com) · [API 文档](https://lotube.letsdeep.com/docs) · [Issues](https://github.com/drxbate/lotube/issues)
 
 </div>
